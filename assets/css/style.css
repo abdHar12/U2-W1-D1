@@ -342,9 +342,13 @@ footer a {
     display: none;
   }
   table {
-    margin-top: 14rem;
+    margin-top: 18rem;
   }
   main {
     box-shadow: unset;
+  }
+  article > p:nth-of-type(2),
+  img {
+    display: inline;
   }
 }
