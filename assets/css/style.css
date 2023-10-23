@@ -301,6 +301,9 @@ footer a {
     width: 33.33%;
     margin-right: -3px;
     margin-left: -3px;
+    height: 12rem;
+    vertical-align: middle;
+    font-size: 1.2rem;
   }
   aside h2 {
     font-size: 3.5rem;
