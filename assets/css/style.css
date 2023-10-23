@@ -321,6 +321,13 @@ footer a {
     margin-left: 6.5rem;
     margin-right: 6.5rem;
   }
+  form input {
+    width: 80%;
+  }
+  form input,
+  form button {
+    height: 3rem;
+  }
 }
 
 @media print {
