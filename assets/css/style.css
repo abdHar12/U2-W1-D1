@@ -322,3 +322,22 @@ footer a {
     margin-right: 6.5rem;
   }
 }
+
+@media print {
+  body {
+    padding: 0;
+  }
+  footer,
+  header,
+  iframe,
+  aside,
+  section {
+    display: none;
+  }
+  table {
+    margin-top: 14rem;
+  }
+  main {
+    box-shadow: unset;
+  }
+}
