@@ -1,0 +1,321 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Poppins, "Helvetica Neue", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 15px;
+  background-image: url("../img/sfondo.png");
+  background-position: center center;
+}
+* {
+  box-sizing: border-box;
+}
+hr {
+  display: none;
+} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+  background: rgb(0, 160, 198);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 3px 3px #444;
+  margin-bottom: 1.5em;
+  padding: 2em 1.5em;
+}
+header div img {
+  margin-bottom: 20px;
+}
+header nav ul {
+  margin: 0;
+}
+header nav li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 1rem;
+}
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+header nav li a:hover {
+  color: red;
+}
+header nav li a::before {
+  content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+  background-color: #fff;
+  box-shadow: 0 3px 3px #444;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+}
+section {
+  background-color: #e3e3e3;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+section h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  background-color: #a3a3a3;
+  margin-top: 1.2rem;
+  padding: 0.5;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.7em;
+}
+p,
+address,
+ul,
+ol,
+dl,
+blockquote {
+  margin-bottom: 1.2em;
+  font-size: 1.9rem;
+}
+h1 + p {
+  color: #a0a0a0;
+}
+article img {
+  border: 5px solid rgb(0, 160, 198);
+  width: 8rem;
+  outline: 5px solid #a02571;
+}
+article h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+ul,
+ol {
+  margin-left: 2em;
+}
+a {
+  color: #00a0c6;
+  font-weight: bold;
+}
+strong {
+  color: #a02571;
+  font-weight: bold;
+}
+code {
+  background-color: #e3e3e3;
+  border: 1px solid #969494;
+  border-radius: 5px;
+}
+iframe {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+  border-radius: 20px;
+}
+
+/* TABELLE */
+table {
+  margin-bottom: 2em;
+  font-size: 2rem;
+}
+caption {
+  font-weight: bold;
+  font-style: italic;
+}
+thead tr {
+  background-color: #3f6bca;
+  color: #ffffff;
+}
+th,
+td {
+  padding: 12px 15px;
+  vertical-align: bottom;
+  text-align: center;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px dashed #333;
+}
+button {
+  padding: 4px 7px;
+  background-color: #3f6bca;
+  border: 0;
+  color: white;
+  font-weight: bold;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+  text-align: center;
+  color: #333;
+  font-size: rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+aside div {
+  background-color: #e3e3e3;
+  border: 1px solid #c3c3c3;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+aside div p:last-child {
+  margin-bottom: 0;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* FOOTER */
+footer {
+  background: rgb(53, 53, 53);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
+  box-shadow: 0 3px 3px #444;
+  color: #f0f0f0;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2rem;
+}
+address {
+  font-size: 2.3rem;
+}
+footer a {
+  color: fuchsia;
+}
+@media screen and (min-width: 767px) {
+  table {
+    margin: 10rem;
+    margin-inline: auto;
+  }
+  address {
+    font-size: 2rem;
+  }
+  p,
+  address,
+  ul,
+  ol,
+  dl,
+  blockquote {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1199px) {
+  body {
+    padding: 15rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  header {
+    padding: 0;
+  }
+  header div,
+  header div img,
+  header nav ul,
+  header div p,
+  header nav {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0;
+    vertical-align: middle;
+  }
+  header div p {
+    margin-left: 1rem;
+  }
+
+  header div {
+    width: 70%;
+    margin-right: auto;
+  }
+
+  header div img {
+    width: 20%;
+    text-align: left;
+    padding: 0;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  header nav ul {
+    margin: 0;
+    text-align: right;
+    font-size: 1.5;
+  }
+  article {
+    padding: 3rem;
+  }
+  table {
+    width: 70%;
+    margin: 8rem;
+    margin-inline: auto;
+  }
+  iframe,
+  section {
+    display: inline-block;
+    width: 50%;
+    height: 25rem;
+    margin-inline: auto;
+    margin-right: -1px;
+    margin-left: -1px;
+    border-radius: 20px;
+    vertical-align: middle;
+  }
+  aside div {
+    display: inline-block;
+    width: 33.33%;
+    margin-right: -3px;
+    margin-left: -3px;
+  }
+  aside h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  article h2 {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    padding: 5rem;
+    font-size: 1.2rem;
+  }
+  address {
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+  }
+}
